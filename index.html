@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171613">
+  <meta name="description" content="Gour Tent and Catering provides event catering, tent arrangements and wedding event setups in Mohali and surrounding areas. Contact us for a customised event enquiry.">
+  <meta property="og:title" content="Gour Tent and Catering | Mohali">
+  <meta property="og:description" content="Beautifully arranged events. Thoughtfully served. Tent arrangements and catering in Mohali.">
+  <meta property="og:type" content="website">
+  <title>Gour Tent and Catering | Mohali</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <style>
+    :root{
+      --ink:#171613;--ink-soft:#343129;--cream:#f6f2e9;--paper:#fffdf8;
+      --gold:#b89a62;--gold-light:#d8c69f;--muted:#756f63;--line:#e6dfd2;
+      --white:#fff;--radius:18px;--shadow:0 18px 50px rgba(30,25,15,.12);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit}
+    img{display:block;max-width:100%}
+    .serif{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.025em}
+    .topbar{background:var(--ink);color:#eee7d8;text-align:center;padding:9px 16px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(230,223,210,.8)}
+    .nav{max-width:1180px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .monogram{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:19px;flex:none}
+    .brand-name{font-family:Georgia,serif;font-size:17px;line-height:1.1}
+    .brand-sub{font-size:9px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;margin-top:5px}
+    .navlinks{display:flex;align-items:center;gap:25px}
+    .navlinks a{text-decoration:none;font-size:12px;color:var(--ink-soft)}
+    .navlinks a:hover{color:#947441}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:white;padding:13px 18px;font-size:12px;letter-spacing:.06em;transition:.2s;cursor:pointer}
+    .nav-cta:hover,.button:hover{background:#373329}
+    .button.light{background:transparent;color:var(--ink)}
+    .button.light:hover{background:var(--cream)}
+    .menu-toggle{display:none;background:none;border:0;font-size:25px}
+    .hero{background:var(--ink);color:white;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,19,16,.86) 0%,rgba(20,19,16,.63) 46%,rgba(20,19,16,.08) 100%),url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=85") center/cover}
+    .hero-inner{position:relative;max-width:1180px;margin:auto;min-height:620px;padding:100px 24px 92px;display:flex;align-items:center}
+    .hero-copy{max-width:650px}
+    .eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.25em;color:var(--gold-light);font-weight:700}
+    h1{font-size:clamp(42px,6.6vw,78px);line-height:1.02;margin:22px 0 24px;max-width:690px}
+    .hero p{font-size:16px;line-height:1.8;color:#e3ddd2;max-width:520px;margin:0 0 30px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .hero .button{border-color:var(--gold);background:var(--gold);color:#171613}
+    .hero .button.light{background:transparent;color:white;border-color:rgba(255,255,255,.6)}
+    .hero .button.light:hover{background:rgba(255,255,255,.1)}
+    .hero-note{margin-top:44px;display:flex;align-items:center;gap:13px;color:#d5cfc3;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .hero-note:before{content:"";width:44px;height:1px;background:var(--gold)}
+    section{padding:90px 24px}
+    .container{max-width:1120px;margin:auto}
+    .section-head{max-width:650px;margin-bottom:38px}
+    .section-head .eyebrow{color:#9a7c45}
+    h2{font-size:clamp(32px,4.4vw,49px);line-height:1.1;margin:13px 0 16px}
+    .section-head p{color:var(--muted);margin:0;max-width:580px}
+    .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .intro-image{position:relative}
+    .intro-image img{width:100%;height:490px;object-fit:cover;border-radius:2px}
+    .image-caption{position:absolute;right:-20px;bottom:25px;background:var(--cream);padding:19px 22px;max-width:230px;box-shadow:var(--shadow)}
+    .image-caption strong{display:block;font-family:Georgia,serif;font-size:19px;font-weight:400}
+    .image-caption span{display:block;font-size:10px;color:var(--muted);margin-top:5px;letter-spacing:.1em;text-transform:uppercase}
+    .intro-copy p{color:var(--muted)}
+    .small-rule{width:55px;height:1px;background:var(--gold);margin:25px 0}
+    .text-link{display:inline-flex;gap:9px;align-items:center;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:6px;font-size:12px;letter-spacing:.05em;margin-top:10px}
+    .services{background:var(--cream)}
+    .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .service-card{background:var(--paper);display:grid;grid-template-columns:1fr 1fr;min-height:300px;overflow:hidden}
+    .service-card img{height:100%;min-height:300px;width:100%;object-fit:cover}
+    .service-copy{padding:30px 27px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+    .service-number{font-size:10px;letter-spacing:.18em;color:#9a7c45}
+    h3{font-family:Georgia,serif;font-size:27px;line-height:1.15;font-weight:400;margin:13px 0}
+    .service-copy p{font-size:13px;color:var(--muted);margin:0 0 16px}
+    .service-copy a{font-size:11px;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}
+    .gallery-grid{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:230px 230px;gap:13px}
+    .gallery-grid img{width:100%;height:100%;object-fit:cover}
+    .gallery-grid .tall{grid-row:span 2}
+    .gallery-grid .wide{grid-column:span 2}
+    .gallery-note{font-size:12px;color:var(--muted);margin-top:18px}
+    .process{background:var(--ink);color:white}
+    .process .section-head p{color:#c5beb2}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:45px}
+    .step{border-top:1px solid #514b3e;padding-top:22px}
+    .step-num{font-family:Georgia,serif;color:var(--gold-light);font-size:30px}
+    .step h3{font-size:22px}
+    .step p{font-size:13px;color:#c5beb2;margin:0}
+    .contact{background:#fdfbf5}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start}
+    .contact-details{margin-top:28px;display:grid;gap:18px}
+    .contact-line{display:flex;gap:13px;align-items:flex-start}
+    .contact-icon{width:38px;height:38px;border:1px solid var(--line);display:grid;place-items:center;color:#967743;flex:none}
+    .contact-line small{display:block;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+    .contact-line a,.contact-line span{font-size:14px;text-decoration:none;overflow-wrap:anywhere}
+    form{background:white;padding:30px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(30,25,15,.04)}
+    .form-title{font-family:Georgia,serif;font-size:27px;margin:0 0 20px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    label{display:block;font-size:11px;color:#5d574d;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:12px 12px;border:1px solid #ddd5c7;background:#fffdf9;font:inherit;font-size:13px;border-radius:0;color:var(--ink)}
+    textarea{min-height:95px;resize:vertical}
+    .full{grid-column:1/-1}
+    form .button{width:100%;margin-top:17px}
+    .form-disclaimer{font-size:10px;color:var(--muted);margin:12px 0 0}
+    footer{background:#14130f;color:#cfc7b9;padding:38px 24px}
+    .footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}
+    .footer-brand{font-family:Georgia,serif;font-size:20px;color:white}
+    .footer-sub{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#a49a88;margin-top:4px}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+    .footer-links a{font-size:11px;text-decoration:none;color:#cfc7b9}
+    .copyright{max-width:1120px;margin:25px auto 0;border-top:1px solid #39352b;padding-top:17px;font-size:10px;color:#8e8779}
+    .whatsapp-float{position:fixed;right:19px;bottom:18px;z-index:30;background:#246b48;color:white;border-radius:40px;padding:13px 17px;text-decoration:none;font-size:12px;box-shadow:0 8px 25px rgba(0,0,0,.22)}
+    @media(max-width:850px){
+      .navlinks{gap:13px}.navlinks a{font-size:11px}.nav-cta{padding:11px 12px}
+      .hero-inner{min-height:570px;padding-top:80px}
+      .intro-grid,.contact-grid{grid-template-columns:1fr;gap:38px}
+      .intro-image img{height:390px}.image-caption{right:12px}
+      .service-grid{grid-template-columns:1fr}
+      .service-card{min-height:260px}.service-card img{min-height:260px}
+      .gallery-grid{grid-template-rows:190px 190px}
+      .contact-grid{gap:30px}
+    }
+    @media(max-width:620px){
+      .topbar{font-size:9px;letter-spacing:.12em}
+      .nav{padding:12px 16px}.brand-name{font-size:15px}.brand-sub{font-size:8px}
+      .navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);padding:20px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
+      .navlinks.open{display:flex}.menu-toggle{display:block}.nav-cta{display:none}
+      .hero:before{background:linear-gradient(90deg,rgba(20,19,16,.84),rgba(20,19,16,.46)),url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80") center/cover}
+      .hero-inner{min-height:570px;padding:75px 21px 60px}
+      .hero p{font-size:14px}.hero-actions .button{width:100%}
+      section{padding:65px 20px}
+      .intro-image img{height:330px}.image-caption{right:8px;bottom:12px;padding:14px}
+      .service-card{grid-template-columns:1fr}.service-card img{height:220px;min-height:220px}.service-copy{padding:24px}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 150px 150px}
+      .gallery-grid .tall{grid-row:auto}.gallery-grid .wide{grid-column:span 2}
+      .steps{grid-template-columns:1fr;gap:23px}
+      form{padding:21px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}
+      .whatsapp-float{right:12px;bottom:12px;padding:12px 14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Tent arrangements · Event catering · Mohali & surrounding areas</div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Gour Tent and Catering home">
+        <span class="monogram">G</span>
+        <span><span class="brand-name">Gour Tent & Catering</span><span class="brand-sub">Mohali · Punjab</span></span>
+      </a>
+      <div class="navlinks" id="navlinks">
+        <a href="#about">Our Story</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Plan Your Event ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" style="padding:0">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">Made for moments that matter</div>
+          <h1 class="serif">Exceptional events.<br>Beautifully served.</h1>
+          <p>From thoughtful catering to elegant tent arrangements, we help bring your celebrations together with care, detail and a personal touch.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Discuss Your Event <span>↗</span></a>
+            <a class="button light" href="#services">Explore Services</a>
+          </div>
+          <div class="hero-note">Serving Mohali and nearby areas</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container intro-grid">
+        <div class="intro-image">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85" alt="Elegant event table setup" loading="lazy">
+          <div class="image-caption"><strong>Every detail has a place.</strong><span>Thoughtful planning, warm hospitality</span></div>
+        </div>
+        <div class="intro-copy">
+          <div class="eyebrow">A little about us</div>
+          <h2 class="serif">Your occasion.<br>Our attention to detail.</h2>
+          <p>At Gour Tent and Catering, we bring event essentials together—from food arrangements to tent setups—so hosts can focus on the people and moments that matter.</p>
+          <p>Whether you are planning a wedding, engagement, family celebration or gathering, tell us what you have in mind. We will discuss your requirements and prepare a customised quote.</p>
+          <div class="small-rule"></div>
+          <a class="text-link" href="#contact">Tell us about your event <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">What we do</div>
+          <h2 class="serif">Everything coming together.</h2>
+          <p>Choose one service or discuss a combined arrangement for your event. Final availability and pricing depend on your requirements, date and venue.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=85" alt="Catering buffet presentation" loading="lazy">
+            <div class="service-copy"><span class="service-number">01 / CATERING</span><h3>Food that brings people together.</h3><p>Event catering and food arrangements tailored to your occasion, guest count and menu preferences.</p><a href="#contact">ENQUIRE ABOUT CATERING ↗</a></div>
+          </article>
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1507504031003-b417219a0be0?auto=format&fit=crop&w=900&q=85" alt="Outdoor tent and event arrangement" loading="lazy">
+            <div class="service-copy"><span class="service-number">02 / TENT & EVENT SETUP</span><h3>A setting worth remembering.</h3><p>Tent arrangements and event setup for celebrations. Share your venue, guest count and preferred style with us.</p><a href="#contact">ENQUIRE ABOUT TENT SETUP ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">The atmosphere</div>
+          <h2 class="serif">A glimpse of the possibilities.</h2>
+          <p>Replace these sample photographs with real photos from Gour Tent and Catering events before publishing. Real work builds more trust than stock imagery.</p>
+        </div>
+        <div class="gallery-grid">
+          <img class="tall" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=85" alt="Wedding reception table styling" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=85" alt="Wedding reception setting" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=85" alt="Elegant banquet decor" loading="lazy">
+          <img class="wide" src="https://images.unsplash.com/photo-1507504031003-b417219a0be0?auto=format&fit=crop&w=1200&q=85" alt="Outdoor event tent setup" loading="lazy">
+        </div>
+        <p class="gallery-note">Sample imagery shown for layout only. Add your own event photographs here.</p>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">A simple process</div>
+          <h2 class="serif">From first conversation to event day.</h2>
+          <p>Share the basics and we can start shaping an arrangement that fits your event.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-num">01</div><h3>Tell us the plan</h3><p>Share your event type, date, venue and approximate guest count.</p></div>
+          <div class="step"><div class="step-num">02</div><h3>Discuss the details</h3><p>We can talk through catering, tent setup, preferences and budget.</p></div>
+          <div class="step"><div class="step-num">03</div><h3>Confirm your quote</h3><p>We'll discuss availability and a quote based on the agreed requirements.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow">Let's talk details</div>
+          <h2 class="serif">Tell us what you're planning.</h2>
+          <p style="color:var(--muted)">Send your event details and we'll help you take the next step. For the fastest response, use WhatsApp or call us.</p>
+          <div class="contact-details">
+            <div class="contact-line"><span class="contact-icon">✆</span><div><small>Phone / WhatsApp</small><a href="https://wa.me/919872219338" target="_blank" rel="noopener">+91 98722 19338</a></div></div>
+            <div class="contact-line"><span class="contact-icon">✉</span><div><small>Email</small><a href="mailto:evangour@icloud.com">evangour@icloud.com</a></div></div>
+            <div class="contact-line"><span class="contact-icon">⌖</span><div><small>Service area</small><span>Mohali, Punjab and surrounding areas</span></div></div>
+          </div>
+        </div>
+        <form id="enquiryForm">
+          <p class="form-title">Event enquiry</p>
+          <div class="form-grid">
+            <div><label for="name">Your name *</label><input id="name" name="name" required placeholder="Name"></div>
+            <div><label for="phone">Your phone *</label><input id="phone" name="phone" required inputmode="tel" placeholder="Phone number"></div>
+            <div><label for="eventType">Event type *</label><select id="eventType" name="eventType" required><option value="">Select event</option><option>Wedding</option><option>Engagement</option><option>Birthday</option><option>Family function</option><option>Corporate event</option><option>Other</option></select></div>
+            <div><label for="service">Service required *</label><select id="service" name="service" required><option value="">Select service</option><option>Catering</option><option>Tent / event setup</option><option>Both catering and tent setup</option><option>Not sure yet</option></select></div>
+            <div><label for="date">Event date</label><input id="date" name="date" type="date"></div>
+            <div><label for="guests">Approx. guest count</label><select id="guests" name="guests"><option value="">Select range</option><option>Under 50</option><option>50–100</option><option>100–250</option><option>250–500</option><option>500+</option><option>Not sure</option></select></div>
+            <div class="full"><label for="venue">Venue / area</label><input id="venue" name="venue" placeholder="Venue or area in/around Mohali"></div>
+            <div class="full"><label for="details">Anything else? (optional)</label><textarea id="details" name="details" placeholder="Menu preferences, setup style, budget or other requirements"></textarea></div>
+          </div>
+          <button class="button" type="submit">Send enquiry on WhatsApp ↗</button>
+          <p class="form-disclaimer">This form opens WhatsApp with your message prepared. It does not send anything until you press Send in WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div class="footer-brand">Gour Tent & Catering</div><div class="footer-sub">Thoughtful events · Mohali, Punjab</div></div>
+      <div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a><a href="mailto:evangour@icloud.com">Email us</a></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Gour Tent and Catering. All rights reserved. Replace sample photos and confirm all business details before publishing.</div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/919872219338?text=Hello%20Gour%20Tent%20and%20Catering%2C%20I%20would%20like%20to%20enquire%20about%20an%20event." target="_blank" rel="noopener" aria-label="Message Gour Tent and Catering on WhatsApp">WhatsApp ↗</a>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navlinks = document.getElementById('navlinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navlinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '×' : '☰';
+    });
+    navlinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navlinks.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); menuToggle.textContent='☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const val = id => document.getElementById(id).value.trim() || 'Not provided';
+      const msg = [
+        'Hello Gour Tent and Catering, I would like to enquire about an event.',
+        '', 'Name: ' + val('name'),
+        'Phone: ' + val('phone'),
+        'Event type: ' + val('eventType'),
+        'Service required: ' + val('service'),
+        'Event date: ' + val('date'),
+        'Approx. guests: ' + val('guests'),
+        'Venue / area: ' + val('venue'),
+        'Details: ' + val('details')
+      ].join('\n');
+      window.open('https://wa.me/919872219338?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
